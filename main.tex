@@ -50,21 +50,19 @@
 %\usepackage{tgheros} %helvetica like
 %\usepackage{tgadventor} %avant garde gothic like
 
-\setmainfont[Numbers={OldStyle,Proportional}]{Cambria}%
-\setsansfont{Calibri}%
-\setmonofont{Consolas}%
+	\setmathfont{Latin Modern Math} % default
 
-	\setmathfont{Cambria Math} % default
-
-	\setmathfont{Cambria Math}[range={
-		"00391-"003A9,		% Upright Greek, uppercase
-		"003B1-"003F5,		% Upright Greek, lowercase
-		"1D6A8-"1D6E1,	% Bold Greek
+	\setmathfont{Latin Modern Math}[range={
+% 		"00391-"003A9,		% Upright Greek, uppercase
+% 		"003B1-"003F5,		% Upright Greek, lowercase
+% 		"1D6A8-"1D6E1,	% Bold Greek
+		up,	% up everything
 	}, math-style=upright]
 
-	\setmathfont{Cambria Math}[range={
-		"1D6E2-"1D6FA,		% Italic Greek, uppercase
-		"1D6FC-"1D71B		% Italic Greek, lowercase
+	\setmathfont{Latin Modern Math}[range={
+		%"1D6E2-"1D6FA,		% Italic Greek, uppercase
+		%"1D6FC-"1D71B		% Italic Greek, lowercase
+		it,	% Italic everything
 	}, math-style=ISO]
 
 %	\setmathfont{XITS Math}[range={
@@ -72,23 +70,30 @@
 %		"0212F,"02130, % Script, Latin, lowercase
 %	}]
 
-	\setmathfont{Cambria Math}[range={
-		"1D608-"1D63B},		% Italic sans serif, Latin
-		sans-style=italic]
+	\setmathfont{Latin Modern Math}[range={
+		%"1D608-"1D63B},		% Italic sans serif, Latin
+		sfit,	% Italic sans serif
+		}, sans-style=italic]
 
 %	\setmathfont{XITS Math}[range={
 %		"0212F,				% \mscre
 %		"1D4B6-"1D1CF,		% Script, Latin, lowercase: \mscra - \mscrz
 %	}]
 
-	\setmathfont{Cambria Math}[range={
-		"1D468-"1D49B,		% Bold, Latin: \mbfitA - \mbfitz
-	}, bold-style=ISO]
+% 	\setmathfont{Latin Modern Math}[range={
+% 		"1D468-"1D49B,		% Bold, Latin: \mbfitA - \mbfitz
+% 	}, bold-style=ISO]
 
-	\setmathfont{Cambria Math}[range={
-		"1D63C-"1D66F,		% Bold italic sans serif, Latin: \mbfitsansA - 
-							% \mbfitsansz
-	}, bold-style=ISO]
+% 	\setmathfont{Latin Modern Math}[range={
+% 		"1D63C-"1D66F,		% Bold italic sans serif, Latin: \mbfitsansA - 
+% 							% \mbfitsansz
+% 	}, bold-style=ISO]
+
+% Fraction-like
+\newcommand{\frde}[2]{{\frac{\dd{#1}}{\dd{#2}}}}
+\newcommand{\frDe}[2]{{\frac{\DD{#1}}{\DD{#2}}}}
+\newcommand{\frpa}[2]{{\frac{\partial{#1}}{\partial{#2}}}}
+\newcommand{\frdva}[2]{{\frac{\dva{#1}}{\dva{#2}}}}
 
 % http://unifraktur.sourceforge.net/unifraktur-forum/viewtopic.php?p=718
 
