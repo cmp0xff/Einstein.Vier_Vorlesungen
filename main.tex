@@ -1,0 +1,192 @@
+%TEMPLATE TO GENERATE PDF EASY READABLE ON 6'' EBOOK-READER
+%article=mwart;book=mwbk;report=mwrep
+%\documentclass[10pt,oneside]{mwbk} %polish style
+\documentclass[10pt,oneside]{article} %international style
+
+%adjusting for 6''
+\usepackage[paperwidth=9cm, paperheight=11.5cm, top=0.1cm, left=0.1cm, right=0.1cm, bottom=0.2cm]{geometry}
+
+% other packages (put here what you need)
+%\usepackage{polski} % polish package 
+%\usepackage[latin2]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % images
+\usepackage{hyperref} %hyperlinks
+\usepackage{calc} % przeliczanie pozycji
+\usepackage{amsmath} % matematyczne symbole
+%\usepackage{longtable} % dla dlugich tabel
+%\usepackage{multirow} % pomoc do tabel
+
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{polyglossia}
+\setdefaultlanguage[
+	%spelling=new
+	]{german}
+\setotherlanguage{french}
+\usepackage{unicode-math}
+
+\usepackage{cleveref}
+
+\usepackage[autostyle=true,german=quotes]{csquotes}
+
+% https://tex.stackexchange.com/questions/207532/reset-equation-numbering-after-each-section
+\usepackage{chngcntr}
+
+\usepackage{makeidx}
+
+% https://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
+\usepackage[perpage]{footmisc}
+
+\makeindex
+
+%FONTS my proposal is TeXGyre
+%\usepackage{tgtermes} %times like
+%\usepackage{tgcursor} %courier like
+%\usepackage{tgschola} %schoolbook like
+%\usepackage{tgpagella} %palatin like
+%\usepackage{tgchorus} %itc zapf chancery like
+%\usepackage{tgbonum} %bookman like
+%\usepackage{tgheros} %helvetica like
+%\usepackage{tgadventor} %avant garde gothic like
+
+\setmainfont[Numbers={OldStyle,Proportional}]{Cambria}%
+\setsansfont{Calibri}%
+\setmonofont{Consolas}%
+
+	\setmathfont{Cambria Math} % default
+
+	\setmathfont{Cambria Math}[range={
+		"00391-"003A9,		% Upright Greek, uppercase
+		"003B1-"003F5,		% Upright Greek, lowercase
+		"1D6A8-"1D6E1,	% Bold Greek
+	}, math-style=upright]
+
+	\setmathfont{Cambria Math}[range={
+		"1D6E2-"1D6FA,		% Italic Greek, uppercase
+		"1D6FC-"1D71B		% Italic Greek, lowercase
+	}, math-style=ISO]
+
+%	\setmathfont{XITS Math}[range={
+%		"1D4B6-"1D4CF,
+%		"0212F,"02130, % Script, Latin, lowercase
+%	}]
+
+	\setmathfont{Cambria Math}[range={
+		"1D608-"1D63B},		% Italic sans serif, Latin
+		sans-style=italic]
+
+%	\setmathfont{XITS Math}[range={
+%		"0212F,				% \mscre
+%		"1D4B6-"1D1CF,		% Script, Latin, lowercase: \mscra - \mscrz
+%	}]
+
+	\setmathfont{Cambria Math}[range={
+		"1D468-"1D49B,		% Bold, Latin: \mbfitA - \mbfitz
+	}, bold-style=ISO]
+
+	\setmathfont{Cambria Math}[range={
+		"1D63C-"1D66F,		% Bold italic sans serif, Latin: \mbfitsansA - 
+							% \mbfitsansz
+	}, bold-style=ISO]
+
+% http://unifraktur.sourceforge.net/unifraktur-forum/viewtopic.php?p=718
+
+%IN ADDITION
+% on such a small "page", we have to let LaTeX to be sloppy
+\frenchspacing 
+\sloppy
+\widowpenalty=10000 %nie pozostawia wdow i sierot pojedynczych
+
+
+%LET'S BEGIN
+
+\pagestyle{empty}
+
+%---------
+%AUTHOR & TITLE---
+\author{Albert Einstein}
+\title{Grundzüge der Relativitätstheorie}
+%\date{\today}
+
+
+
+%-------------------
+%ADDITIONAL INFO FOR PDF
+%INFO DLA PDF
+% \pdfinfo {
+% /Author (\@author)
+% /Subject (ebook,)
+% /Title (\@title)
+% /Creator (TexLive&Linux)
+% /Producer (pdflatex)
+% /CreationDate (D:20121212121212)
+% %/ModDate (D:\pdfdate)
+% /Keywords (ebook;6inches)
+% }
+
+% https://tex.stackexchange.com/questions/332007/how-to-provides-title-and-author-variable-to-hypersetup
+\makeatletter
+\hypersetup{%
+%	xetex,
+	unicode	= true,
+%	bookmarks	= true,
+	linktoc	= true,
+	colorlinks	= true,
+	pdfauthor   = {\@author},
+	pdftitle	= {\@title},
+%	pdfsubject	= {The Subject},
+%	pdfkeywords   = {Some Keywords},
+%	pdfproducer	= {XeLateX with hyperref},
+%	pdfcreator	= {Xelatex},
+	pdflang	   = de-DE,
+	}
+\makeatother
+
+% https://tex.stackexchange.com/questions/207532/reset-equation-numbering-after-each-section
+\counterwithin*{equation}{section}
+
+\begin{document}
+
+% https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
+\setcounter{secnumdepth}{0}
+
+\input{./front_matter}
+
+\input{./raum_zeit-1}
+
+\input{./spez_rela-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Allgemeine Relativitätstheorie}
+\label{sec:all-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Allgemeine Relativitätstheorie (Fortsetzung)}
+\label{sec:all-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+% https://tex.stackexchange.com/questions/195850/appendix-from-letter-to-roman-numeral
+\renewcommand{\thesection}{\Roman{section}}
+
+% https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
+\setcounter{secnumdepth}{1}
+
+\input{./anha-1}
+
+\input{./anha-2}
+
+% https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
+\setcounter{secnumdepth}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Namen- und Sachverzeichnis}
+\label{sec:nam-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printindex
+
+\end{document}
