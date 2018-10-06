@@ -73,7 +73,7 @@ können; \textsc{Poincar\'e}\index{\textsc{Poincar\'e}, H.} nennt sie
 bezieht sich auf die Gesetze, welche jene Lagerungsmöglichkeiten beherrschen. 
 Für den Raumbegriff scheint uns folgendes wesentlich. Man kann durch Anlegen von 
 Körpern $B$, $C \ldots$ an einen Körper $A$ neu Körper bilden, wir wollen sagen, 
-den Körper A fortsetzen. Man kann einen Körper $A$ so fortsetzen, daß er mit 
+den Körper $\lambda$ fortsetzen. Man kann einen Körper $A$ so fortsetzen, daß er mit 
 jedem anderen Körper $X$ zur Berührung kommt. Wir können den Inbegriff aller 
 Fortsetzungen des Körpers $A$ als den \enquote{Raum des Körpers $A$} bezeichnen. 
 Dann gilt, daß alle Körper sich \enquote{im Raum des (beliebig gewählten) 
@@ -108,7 +108,8 @@ Koordinaten $x_1$, $x_2$, $x_3$ bezeichnet werden können, daß die
 Koordinatendifferenzen $\Delta x_1$, $\Delta x_2$, $\Delta x_3$ der 
 Streckenpunkte bei jeder Lagerung der Strecke die nämliche Quadratsumme
 \begin{align}
-    s^2 = \Delta x_1^2 + \Delta x_2^2 + \Delta x_3^2
+	s^2 = \Delta x_1^2 + \Delta x_2^2 + \Delta x_3^2
+	\label{eq:1}
 \end{align}
 liefern, so nennt man den Bezugsraum \textsc{Euklid}isch und die Koordinaten 
 kartesische\footnote{Diese Relation muß gelten für beliebige Wahl des 
@@ -132,132 +133,135 @@ unendlich kleine Körper und Bezugsräume Gültigkeit.
 Die Größe $s$ nennen wir die Länge der Strecke. Damit diese eindeutig bestimmt 
 sei, muß die Länge einer bestimmten Strecke willkürlich festgesetzt, z.\ B.\ 
 gleich $1$ gesetzt werden (Einheitsmaßstab). Dann sind die Längen aller übrigen 
-Strecken bestimmt. Setzt man die $x\nu$ linear abhängig von einem Parameter 
+Strecken bestimmt. Setzt man die $x_\nu$ linear abhängig von einem Parameter 
 $\lambda$
 \begin{align*}
-    x_{\nu} = a_{\nu} + \lambda b_{\nu},
+	x_{\nu} = a_{\nu} + \lambda b_{\nu},
 \end{align*}
 so erhält man eine Linie, welche alle Eigenschaften der Geraden der euklidischen 
 Geometrie besitzt. Speziell folgert man leicht, daß man durch $n$-maliges 
 Abtragen einer Strecke $s$ auf einer Geraden eine Strecke von der Länge $n 
 \cdot s$ erhält. Eine Länge bedeutet also das Ergebnis einer längs einer 
-Geraden ausgeführten Messung mit Hilfe des Einheitsmaßstabes ; sie hat ebenso 
+Geraden ausgeführten Messung mit Hilfe des Einheitsmaßstabes; sie hat ebenso 
 wie die gerade Linie.eine vom Koordinatensystem unabhängige Bedeutung, wie aus 
 dem Folgenden hervorgeht.
 
-Wir kommen nun zu einem Gedankengang, der in
-analoger Weise in der speziellen und allgemeinen Rela-
-tivitätstheorie eine Rolle spielt. Wir fragen: Gibt es
-außer den verwendeten kartesischen Koordinaten noch
-andere gleichberechtigte 1 Die Strecke hat eine von
-der Koordinatenwahl unabhängige physikalische Be-
-deutung, ebenso also auch die Kugelfläche, welche man
-erhält als Ort der Endpunkte aller gleichen Strecken,
-welche man von einem 'beliebigen Anfangspunkt des
-Bezugsraumes aus abträgt. Sind sowohl x. als auch x;
-(11 von 1 bis 3) kartesische Koordinaten unseres Bezugs-
-raumes, so wird die Kugelfläche in bezug auf jene
-beiden Koordinatensysteme durch die Gleichungen aus-
-gedrückt:
+Wir kommen nun zu einem Gedankengang, der in analoger Weise in der speziellen 
+und allgemeinen Relativitätstheorie eine Rolle spielt. Wir fragen: Gibt es 
+außer den verwendeten kartesischen Koordinaten noch andere gleichberechtigte? 
+Die Strecke hat eine von der Koordinatenwahl unabhängige physikalische 
+Bedeutung, ebenso also auch die Kugelfläche, welche man erhält als Ort der 
+Endpunkte aller gleichen Strecken, welche man von einem beliebigen 
+Anfangspunkt des Bezugsraumes aus abträgt. Sind sowohl $x_\nu$ als auch 
+$x'_\nu$ ($\nu$ von $1$ bis $3$) kartesische Koordinaten unseres Bezugsraumes, 
+so wird die Kugelfläche in bezug auf jene beiden Koordinatensysteme durch die 
+Gleichungen ausgedrückt:
 \begin{align}
-    &= \text{konst.}
-    \\
-    &= \text{konst.}
-    \tag{2a}
+	\sum \Delta x_{\nu}^{2} &= \text{konst.}
+	\label{eq:2} \\
+	\sum \Delta x^{\prime 2}_{\nu}&= \text{konst.}
+	\label{eq:2a} \tag{2a}
 \end{align}
-Wie müssen sich die x; aus den Xv ausdrücken, damit die
-Gleichungen (2) und (2a) äquivalent seien
-~
-Denkt man
-sich die x; in Funktion der Xv ausgedrückt, so kaDIl man
-für genügend kleine L1x" nach dem \textsc{Taylor}schen Satze
-setzen:
-\begin{align}
-    = \ldots
-\end{align}
-Setzt man dies in (2a) ein und vergleicht mit (1), so sieht
-man, daß die x; lineare Gleichungen der Xv sein müssen.
+Wie müssen sich die $x'_{\nu}$ aus den $x_{\nu}$ ausdrücken, damit die 
+\cref{eq:2,eq:2a} äquivalent seien? Denkt man sich die $x'_{\nu}$ in Funktion 
+der $x_{\nu}$ ausgedrückt, so kann man für genügend kleine $\Delta x_{\nu}$ 
+nach dem \textsc{Taylor}schen Satze setzen: 
+\begin{align*}
+\Delta x'_{\nu} = 
+	\sum_{\alpha} \frpa{x'_{\nu}}{x_{\alpha}}\,\Delta x_{\alpha} +
+	\frac{1}{2} \sum_{\alpha\beta}
+		\frpa{^2 x'_{\nu}}{x_{\alpha}\,\partial x_{\beta}}
+			\,\Delta x_{\alpha}\,\Delta x_{\beta} \ldots
+\end{align*}
+Setzt man dies in \eqref{eq:2a} ein und vergleicht mit \eqref{eq:1}, so sieht
+man, daß die $x'_{\nu}$ \emph{lineare} Gleichungen der $x_{\nu}$ sein müssen.
 Setzt man demgemäß
 \begin{align}
-    &=
+	x'_{\nu} &= a_{\nu} + \sum_\alpha b_{\nu\alpha} x_{\alpha}
+	\label{eq:3}
 \end{align}
 oder
 \begin{align}
-    &=
-    \tag{3a}
+	\Delta x'_{\nu} &= \sum_\alpha b_{\nu\alpha}\,\Delta x_{\alpha}
+	\label{eq:3a} \tag{3a}
 \end{align}
-so drückt sich die Äquivalenz der Gleichungen (2) und
-(2a) in der Form aus
+so drückt sich die Äquivalenz der \cref{eq:2,eq:2a} in der Form aus
 \begin{align}
-    \text{($\lambda$ von den unabhängig)}.
-    \tag{3b}
+	\sum \Delta x^{\prime 2}_{\nu} &= \lambda^2 \sum \Delta x_{\nu}^2
+	\text{($\lambda$ von den unabhängig)}.
+	\label{eq:2b} \tag{2b}
 \end{align}
-Hieraus folgt zunächst, daß A eine Konstante sein muß.
-Setzt man zunächst Ä == 1, so liefern (2b) und -(3a) die
+Hieraus folgt zunächst, daß $\lambda$ eine Konstante sein muß. Setzt man 
+zunächst $\lambda = 1$, so liefern \eqref{eq:2b} und \eqref{eq:3a} die
 Bedingungen
 \begin{align}
-    b_{\nu \alpha} =
+	\sum b_{\nu \alpha} b_{\nu\beta} = \delta_{\alpha\beta}\,,
+	\label{eq:4}
 \end{align}
-wobei $\delta_{\alpha\beta}$ oder ~ ( J ( P == 0 ist, je nachdem LX == ß oder
-(X =1= ß. Die Bedingungen (4) heißen Orthogonalitätsbe-
-dingungen, die Transformationen (3), (4) lineare ortho-
-gonale Transformationen. Verlangt man, daß 8 2 == I.: L1x;
-für jedes Koordinatensystem gleich dem Quadrat der
-Länge sei und daß stets mit dem gleichen Einheitsmaß-
-stabe gemessen werde, so muß Ä == 1 sein. Dann sind
-die linearen orthogonalen Transformationen die einzi-
-gen, welche den Übergang von einem kartesischen
-Koordinatensystem eines Bezugsraumes zu einem ande-
-ren vermitteln. Man erkennt, daß bei Anwendung sol-
-cher Transformationen die Gleichungen einer Geraden
-wieder in die Gleichungen einer Geraden übergehen.
-Wir bilden noch die Umkehrung der Gleichungen (3a),
-indem wir beiderseits mit b"i multiplizieren und über v
-summieren. Man erhält
+wobei $\delta_{\alpha\beta} = 1$ oder $\delta_{\alpha\beta} = 0$ ist, je 
+nachdem $\alpha = \beta$ oder $\alpha \neq \beta$. Die Bedingungen 
+\eqref{eq:4} heißen Orthogonalitätsbedingungen, die Transformationen 
+\eqref{eq:3}, $\eqref{eq:4}$ lineare orthogonale Transformationen. Verlangt 
+man, daß $s^2 = \sum \Delta x_{\nu}^2$ für jedes Koordinatensystem gleich dem 
+Quadrat der Länge sei und daß stets mit dem gleichen Einheitsmaßstabe gemessen 
+werde, so muß $\lambda = 1$ sein. Dann sind die linearen orthogonalen 
+Transformationen die einzigen, welche den Übergang von einem kartesischen 
+Koordinatensystem eines Bezugsraumes zu einem anderen vermitteln. Man erkennt, 
+daß bei Anwendung solcher Transformationen die Gleichungen einer Geraden 
+wieder in die Gleichungen einer Geraden übergehen. Wir bilden noch die 
+Umkehrung der Gleichungen \eqref{eq:3a}, indem wir beiderseits mit 
+$b_{\nu\beta}$ multiplizieren und über $\nu$ summieren. Man erhält
 \begin{align}
-    b_{\nu\beta}
+	\sum b_{\nu\beta}\, \Delta x'_{\nu} = \sum_{\nu\alpha} 
+		b_{\nu\alpha} b_{\nu\beta} \,\Delta x_{\alpha} = \sum_{\alpha}
+		\delta_{\alpha\beta}\,\Delta x_{\alpha} = \Delta x_{\beta}\,.
+	\label{eq:5}
 \end{align}
-Dieselben Koeffizienten b vermitteln also auch die in-
-verse Substitution der L1x.,. Geometrisch ist b"or. der
-Kosinus des Winkels zwischen der x;-Achse und der
-xor.-Achse.
+Dieselben Koeffizienten $b$ vermitteln also auch die inverse Substitution der 
+$\Delta x_{\nu}$. Geometrisch ist $b_{\nu\alpha}$ der Kosinus des Winkels 
+zwischen der $x'_{\nu}$-Achse und der $x_{\alpha}$-Achse.
 
-Zusammenfassend können wir sagen: In der eukli-
-dischen Geometrie gibt es (in einem gegebenen Bezugs-
-raume) bevorzugte Koordinatensysteme, die karte-
-sischeri, welche auseinander durch lineare orthogonale
-Transformation der Koordinaten hervorgehen. In sol-
-chen Koordinaten drückt sich der mit dem Maßstab
-meßbare Abstand 8 zweier Punkte des Bezugsraumes in
-besonders einfacher Weise aus. Auf diesen Begriff des
-Abstandes läßt sich die ganze Geometrie gründen. In
-der gegebenen Darstellung bezieht sich die Geometrie
-auf wirkliche Dinge (feste Körper), und ihre Sätze sind
-Behauptungen über das Verhalten dieser Dinge, welche
-zutreffend oder auch unzutreffend sein können.
+Zusammenfassend können wir sagen: In der euklidischen Geometrie gibt es (in 
+einem gegebenen Bezugsraume) bevorzugte Koordinatensysteme, die kartesischen, 
+welche auseinander durch lineare orthogonale Transformation der Koordinaten 
+hervorgehen. In solchen Koordinaten drückt sich der mit dem Maßstab meßbare 
+Abstand $s$ zweier Punkte des Bezugsraumes in besonders einfacher Weise aus. 
+Auf diesen Begriff des Abstandes läßt sich die ganze Geometrie gründen. In der
+gegebenen Darstellung bezieht sich die Geometrie auf wirkliche Dinge (feste 
+Körper), und ihre Sätze sind Behauptungen über das Verhalten dieser Dinge, 
+welche zutreffend oder auch unzutreffend sein können.
 
-Gewöhnlich pflegt man die Geometrie so zu lehren,
-daß eine Beziehung der Begriffe zu den Erlebnissen
-nicht hergestellt wird. Es hat auch Vorteile, dasjenige,
-was an ihr rein logisch und von der prinzipiell unvoll-
-kommenen Empirie unabhängig ist, zu isolieren. Der
-reine Mathematiker kann sich damit begnügen. Er ist
-zufrieden, wenn seine Sätze richtig, d.\ h.\ ohne logische
-Fehler aus den Axiomen abgeleitet sind. Die Frage, ob
-die euklidische Geometrie wahr ist oder nicht, hat für
-ihn keinen Sinn. Für unseren Zweck aber ist es nötig,
-den Grundbegriffen der Geometrie Naturobjekte zuzu ..
-ordnen; ohne eine solche Zuordnung ist die Geometrie
-für den Physiker gegenstandslos. Für den Physiker
-hat es daher wohl einen Sinn, nach der Wahrheit bzw.\
-dem Zutreffen der geometrischen Sätze zu sprechen.
-Daß die so interpretierte euklidische Geometrie nicht
-nur Selbstverständliches, d.\ h.\ durch Definitionen logisch
-Bedingtes ausspricht, erkennt man durch folgende ein-
-fache Überlegung, welche von \textsc{Helmholtz} herrührt:
+Gewöhnlich pflegt man die Geometrie so zu lehren, daß eine Beziehung der 
+Begriffe zu den Erlebnissen nicht hergestellt wird. Es hat auch Vorteile, 
+dasjenige, was an ihr rein logisch und von der prinzipiell unvollkommenen 
+Empirie unabhängig ist, zu isolieren. Der reine Mathematiker kann sich damit 
+begnügen. Er ist zufrieden, wenn seine Sätze richtig, d.\ h.\ ohne logische
+Fehler aus den Axiomen abgeleitet sind. Die Frage, ob die euklidische 
+Geometrie \emph{wahr} ist oder nicht, hat für ihn keinen Sinn. Für unseren 
+Zweck aber ist es nötig, den Grundbegriffen der Geometrie Naturobjekte 
+zuzuordnen; ohne eine solche Zuordnung ist die Geometrie für den Physiker 
+gegenstandslos. Für den Physiker hat es daher wohl einen Sinn, nach der 
+Wahrheit bzw.\ dem Zutreffen der geometrischen Sätze zu sprechen. Daß die so 
+interpretierte euklidische Geometrie nicht nur Selbstverständliches, d.\ h.\ 
+durch Definitionen logisch Bedingtes ausspricht, erkennt man durch folgende 
+einfache Überlegung, welche von \textsc{Helmholtz} herrührt:
+
+Zwischen $n$ Punkten des Raumes gibt es $\dfrac{1}{2} n(n-1)$ Abstände 
+$s_{\mu\nu}$; zwischen diesen und den $3n$ Koordinaten bestehen die Relationen
+\begin{align}
+s_{\mu\nu}^2 = \rbr{x_{1(\mu)} - x_{1(\nu)}}^2 +
+	\rbr{x_{2(\mu)} - x_{2(\nu)}}^2 + \cdots
+\end{align}
+
+Aus diesen $\dfrac{n(n-1)}{2}$ Gleichungen lassen sich die $3n$ Koordinaten
+eliminieren, aus welcher Elimination mindestens $\dfrac{n(n-1)}{2} - 3n$ 
+Gleichungen zwischen den $s_{\mu\nu}$ folgen müssen\footnote{In Wahrheit sind 
+es $\dfrac{n(n-1)}{2} - 3n + 6$ Gleichungen.}. Da die $s_{\mu\nu}$ meßbare 
+Größen sind, die ihrer Definition nach voneinander unabhängig sind, brauchen 
+diese Beziehungen zwischen den $s_{\mu\nu}$ a priori nicht zu bestehen.
 
 \begin{align}
-    V = \iiint d x_1 d x_2 d x_3
+	V = \iiint d x_1\,d x_2\,d x_3\,.
 \end{align}
 
 Beschränkt man sich auf diejenigen Transformationen, welche die Determinante 
@@ -323,10 +327,10 @@ Mit Rücksicht auf die Antisymmetrie von ~ I l " können
 die ersten drei Gleichungen von \eqref{eq:19} und \eqref{eq:20} in die
 Form gebracht werden
 \begin{align}
-    &= \frac{1}{c}
-    \tag{19a} \\
-    &= +\frac{1}{c}.
-    \tag{20a}
+	&= \frac{1}{c}
+	\tag{19a} \\
+	&= +\frac{1}{c}.
+	\tag{20a}
 \end{align}
 
 ~
@@ -334,10 +338,10 @@ erscheint demnach im Gegensatz zu e als Größe vom Symmetrie charakter eines
 Drehmomentes oder einer Rotationsgeschwindigkeit. Die Divergenzgleichungen aber 
 nehmen die Formen an
 \begin{align}
-    &= \varrho
-    \tag{19b} \\
-    &= 0.
-    \tag{20b}
+	&= \varrho
+	\tag{19b} \\
+	&= 0.
+	\tag{20b}
 \end{align}
 Die letzte Gleichung ist eine antisymmetrische Tensorgleichung vom dritten Range 
 (die Antisymmetrie der linken Seite bezüglich jedes Indexpaares ist mit 
