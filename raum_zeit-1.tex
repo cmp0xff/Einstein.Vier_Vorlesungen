@@ -187,8 +187,12 @@ oder
 \end{align}
 so drückt sich die Äquivalenz der \cref{eq:2,eq:2a} in der Form aus
 \begin{align}
-	\sum \Delta x^{\prime 2}_{\nu} &= \lambda^2 \sum \Delta x_{\nu}^2
+\begin{aligned}
+	\sum \Delta x^{\prime 2}_{\nu} = \lambda^2 \sum \Delta x_{\nu}^2
+% Hier ist anders als das original Buch
+	\nonumber \\
 	\text{($\lambda$ von den unabhängig)}.
+\end{aligned}
 	\label{eq:2b} \tag{2b}
 \end{align}
 Hieraus folgt zunächst, daß $\lambda$ eine Konstante sein muß. Setzt man 
@@ -212,8 +216,10 @@ wieder in die Gleichungen einer Geraden übergehen. Wir bilden noch die
 Umkehrung der Gleichungen \eqref{eq:3a}, indem wir beiderseits mit 
 $b_{\nu\beta}$ multiplizieren und über $\nu$ summieren. Man erhält
 \begin{align}
-	\sum b_{\nu\beta}\, \Delta x'_{\nu} = \sum_{\nu\alpha} 
-		b_{\nu\alpha} b_{\nu\beta} \,\Delta x_{\alpha} = \sum_{\alpha}
+	\sum b_{\nu\beta}\, \Delta x'_{\nu} &= \sum_{\nu\alpha}
+		b_{\nu\alpha} b_{\nu\beta} \,\Delta x_{\alpha}
+		\nonumber \\ % Hier ist anders als das original Buch
+		&= \sum_{\alpha}
 		\delta_{\alpha\beta}\,\Delta x_{\alpha} = \Delta x_{\beta}\,.
 	\label{eq:5}
 \end{align}

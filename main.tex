@@ -1,7 +1,7 @@
 %TEMPLATE TO GENERATE PDF EASY READABLE ON 6'' EBOOK-READER
 %article=mwart;book=mwbk;report=mwrep
-%\documentclass[10pt,oneside]{mwbk} %polish style
-\documentclass[10pt,oneside]{article} %international style
+%\documentclass[11pt,oneside]{mwbk} %polish style
+\documentclass[11pt,oneside]{article} %international style
 
 %adjusting for 6''
 \usepackage[paperwidth=9cm, paperheight=11.5cm, top=0.1cm, left=0.1cm, right=0.1cm, bottom=0.2cm]{geometry}
@@ -143,17 +143,17 @@
 \makeatletter
 \hypersetup{%
 %	xetex,
-	unicode	= true,
+	unicode		= true,
 %	bookmarks	= true,
-	linktoc	= true,
+	linktoc		= true,
 	colorlinks	= true,
-	pdfauthor   = {\@author},
+	pdfauthor	= {\@author},
 	pdftitle	= {\@title},
 %	pdfsubject	= {The Subject},
-%	pdfkeywords   = {Some Keywords},
-%	pdfproducer	= {XeLateX with hyperref},
-%	pdfcreator	= {Xelatex},
-	pdflang	   = de-DE,
+%	pdfkeywords	= {Some Keywords},
+	pdfproducer	= {XeLaTeX with hyperref},
+%	pdfcreator	= {XeLaTeX},
+	pdflang		= de-DE,
 	}
 \makeatother
 
