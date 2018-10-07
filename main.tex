@@ -38,6 +38,9 @@
 % https://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
 \usepackage[perpage]{footmisc}
 
+% https://tex.stackexchange.com/questions/23601/footnote-number-in-braces-parentheses
+\renewcommand{\thefootnote}{\arabic{footnote})}
+
 \makeindex
 
 %FONTS my proposal is TeXGyre
@@ -49,6 +52,12 @@
 %\usepackage{tgbonum} %bookman like
 %\usepackage{tgheros} %helvetica like
 %\usepackage{tgadventor} %avant garde gothic like
+
+% Differentials
+\newcommand{\DD}{\BbbD}
+\newcommand{\dd}{d}
+\newcommand{\dva}{\mupdelta} % no better way?!
+\newcommand{\Dva}{\mupDelta}
 
 	\setmathfont{Latin Modern Math} % default
 

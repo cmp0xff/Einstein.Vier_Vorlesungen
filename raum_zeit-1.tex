@@ -25,7 +25,7 @@ früheren, aber die Art dieser Zuordnung bleibt zunächst in hohem Maße
 willkürlich. Ich kann jedoch die Art dieser Zuordnung weiter fixieren durch eine 
 Uhr, indem ich den durch sie vermittelten Erlebnisablauf mit dem Ablauf der 
 übrigen Erlebnisse vergleiche. Unter einer Uhr versteht man ein Ding, welches 
-ab. zählbare Erlebnisse liefert und noch andere Eigenschaften besitzt, von denen 
+abzählbare Erlebnisse liefert und noch andere Eigenschaften besitzt, von denen 
 im folgenden die Rede sein wird.
 
 Verschiedene Menschen können mit Hilfe der Sprache ihre Erlebnisse bis zu einem 
@@ -105,15 +105,15 @@ z.\ B.\ wie folgt ausgedrückt werden. Zwei an einem festen Körper markierte
 Punkte bilden eine Strecke. Eine solche kann in mannigfacher Weise gegenüber dem 
 Bezugsraume ruhend gelagert werden. Wenn nun die Punkte dieses Raumes so durch 
 Koordinaten $x_1$, $x_2$, $x_3$ bezeichnet werden können, daß die 
-Koordinatendifferenzen $\Delta x_1$, $\Delta x_2$, $\Delta x_3$ der 
+Koordinatendifferenzen $\Dva x_1$, $\Dva x_2$, $\Dva x_3$ der 
 Streckenpunkte bei jeder Lagerung der Strecke die nämliche Quadratsumme
 \begin{align}
-	s^2 = \Delta x_1^2 + \Delta x_2^2 + \Delta x_3^2
+	s^2 = \Dva x_1^2 + \Dva x_2^2 + \Dva x_3^2
 	\label{eq:1}
 \end{align}
 liefern, so nennt man den Bezugsraum \textsc{Euklid}isch und die Koordinaten 
 kartesische\footnote{Diese Relation muß gelten für beliebige Wahl des 
-Anfangspunktes und der Richtung (Verhältnis $\Delta x_1 : \Delta x_2 : \Delta 
+Anfangspunktes und der Richtung (Verhältnis $\Dva x_1 : \Dva x_2 : \Dva 
 x_3$) der Strecke.}. Es genügt hierfür sogar, diese Annahme in der Grenze für 
 unendlich kleine Strecken zu machen. In dieser Annahme liegen einige weniger 
 spezielle enthalten, auf die wir ihrer grundlegenden Bedeutung wegen aufmerksam 
@@ -157,21 +157,21 @@ $x'_\nu$ ($\nu$ von $1$ bis $3$) kartesische Koordinaten unseres Bezugsraumes,
 so wird die Kugelfläche in bezug auf jene beiden Koordinatensysteme durch die 
 Gleichungen ausgedrückt:
 \begin{align}
-	\sum \Delta x_{\nu}^{2} &= \text{konst.}
+	\sum \Dva x_{\nu}^{2} &= \text{konst.}
 	\label{eq:2} \\
-	\sum \Delta x^{\prime 2}_{\nu}&= \text{konst.}
+	\sum \Dva x^{\prime 2}_{\nu}&= \text{konst.}
 	\label{eq:2a} \tag{2a}
 \end{align}
 Wie müssen sich die $x'_{\nu}$ aus den $x_{\nu}$ ausdrücken, damit die 
 \cref{eq:2,eq:2a} äquivalent seien? Denkt man sich die $x'_{\nu}$ in Funktion 
-der $x_{\nu}$ ausgedrückt, so kann man für genügend kleine $\Delta x_{\nu}$ 
+der $x_{\nu}$ ausgedrückt, so kann man für genügend kleine $\Dva x_{\nu}$ 
 nach dem \textsc{Taylor}schen Satze setzen: 
 \begin{align*}
-\Delta x'_{\nu} = 
-	\sum_{\alpha} \frpa{x'_{\nu}}{x_{\alpha}}\,\Delta x_{\alpha} +
+\Dva x'_{\nu} = 
+	\sum_{\alpha} \frpa{x'_{\nu}}{x_{\alpha}}\,\Dva x_{\alpha} +
 	\frac{1}{2} \sum_{\alpha\beta}
 		\frpa{^2 x'_{\nu}}{x_{\alpha}\,\partial x_{\beta}}
-			\,\Delta x_{\alpha}\,\Delta x_{\beta} \ldots
+			\,\Dva x_{\alpha}\,\Dva x_{\beta} \ldots
 \end{align*}
 Setzt man dies in \eqref{eq:2a} ein und vergleicht mit \eqref{eq:1}, so sieht
 man, daß die $x'_{\nu}$ \emph{lineare} Gleichungen der $x_{\nu}$ sein müssen.
@@ -182,15 +182,15 @@ Setzt man demgemäß
 \end{align}
 oder
 \begin{align}
-	\Delta x'_{\nu} &= \sum_\alpha b_{\nu\alpha}\,\Delta x_{\alpha}
+	\Dva x'_{\nu} &= \sum_\alpha b_{\nu\alpha}\,\Dva x_{\alpha}
 	\label{eq:3a} \tag{3a}
 \end{align}
 so drückt sich die Äquivalenz der \cref{eq:2,eq:2a} in der Form aus
 \begin{align}
-\begin{aligned}
-	\sum \Delta x^{\prime 2}_{\nu} = \lambda^2 \sum \Delta x_{\nu}^2
 % Hier ist anders als das original Buch
-	\nonumber \\
+\begin{aligned}
+	\sum \Dva x^{\prime 2}_{\nu} = \lambda^2 \sum \Dva x_{\nu}^2
+	\\
 	\text{($\lambda$ von den unabhängig)}.
 \end{aligned}
 	\label{eq:2b} \tag{2b}
@@ -199,14 +199,14 @@ Hieraus folgt zunächst, daß $\lambda$ eine Konstante sein muß. Setzt man
 zunächst $\lambda = 1$, so liefern \eqref{eq:2b} und \eqref{eq:3a} die
 Bedingungen
 \begin{align}
-	\sum b_{\nu \alpha} b_{\nu\beta} = \delta_{\alpha\beta}\,,
+	\sum b_{\nu \alpha} b_{\nu\beta} = \Dva_{\alpha\beta}\,,
 	\label{eq:4}
 \end{align}
-wobei $\delta_{\alpha\beta} = 1$ oder $\delta_{\alpha\beta} = 0$ ist, je 
+wobei $\Dva_{\alpha\beta} = 1$ oder $\Dva_{\alpha\beta} = 0$ ist, je 
 nachdem $\alpha = \beta$ oder $\alpha \neq \beta$. Die Bedingungen 
 \eqref{eq:4} heißen Orthogonalitätsbedingungen, die Transformationen 
 \eqref{eq:3}, $\eqref{eq:4}$ lineare orthogonale Transformationen. Verlangt 
-man, daß $s^2 = \sum \Delta x_{\nu}^2$ für jedes Koordinatensystem gleich dem 
+man, daß $s^2 = \sum \Dva x_{\nu}^2$ für jedes Koordinatensystem gleich dem 
 Quadrat der Länge sei und daß stets mit dem gleichen Einheitsmaßstabe gemessen 
 werde, so muß $\lambda = 1$ sein. Dann sind die linearen orthogonalen 
 Transformationen die einzigen, welche den Übergang von einem kartesischen 
@@ -216,15 +216,18 @@ wieder in die Gleichungen einer Geraden übergehen. Wir bilden noch die
 Umkehrung der Gleichungen \eqref{eq:3a}, indem wir beiderseits mit 
 $b_{\nu\beta}$ multiplizieren und über $\nu$ summieren. Man erhält
 \begin{align}
-	\sum b_{\nu\beta}\, \Delta x'_{\nu} &= \sum_{\nu\alpha}
-		b_{\nu\alpha} b_{\nu\beta} \,\Delta x_{\alpha}
-		\nonumber \\ % Hier ist anders als das original Buch
+% Hier ist anders als das original Buch
+\begin{aligned}
+	\sum b_{\nu\beta}\, \Dva x'_{\nu} &= \sum_{\nu\alpha}
+		b_{\nu\alpha} b_{\nu\beta} \,\Dva x_{\alpha}
+		\\ 
 		&= \sum_{\alpha}
-		\delta_{\alpha\beta}\,\Delta x_{\alpha} = \Delta x_{\beta}\,.
+		\Dva_{\alpha\beta}\,\Dva x_{\alpha} = \Dva x_{\beta}\,.
+\end{aligned}
 	\label{eq:5}
 \end{align}
 Dieselben Koeffizienten $b$ vermitteln also auch die inverse Substitution der 
-$\Delta x_{\nu}$. Geometrisch ist $b_{\nu\alpha}$ der Kosinus des Winkels 
+$\Dva x_{\nu}$. Geometrisch ist $b_{\nu\alpha}$ der Kosinus des Winkels 
 zwischen der $x'_{\nu}$-Achse und der $x_{\alpha}$-Achse.
 
 Zusammenfassend können wir sagen: In der euklidischen Geometrie gibt es (in 
@@ -266,18 +269,65 @@ es $\dfrac{n(n-1)}{2} - 3n + 6$ Gleichungen.}. Da die $s_{\mu\nu}$ meßbare
 Größen sind, die ihrer Definition nach voneinander unabhängig sind, brauchen 
 diese Beziehungen zwischen den $s_{\mu\nu}$ a priori nicht zu bestehen.
 
-\begin{align}
-	V = \iiint d x_1\,d x_2\,d x_3\,.
-\end{align}
+Aus dem Vorhergehenden zeigt sich, daß die Transformationsgleichungen 
+\eqref{eq:3}, \eqref{eq:4} für die euklidische Geometrie eine fundamentale 
+Bedeutung besitzen, indem sie den Übergang von einem kartesischen 
+Koordinatensystem zu einem anderen beherrschen. Das kartesische 
+Koordinatensystem zeichnet sich dadurch aus, daß sich in bezug auf jedes solche 
+der meßbare Abstand $s$ zweier Punkte durch die Gleichung
+\begin{align*}
+s^2 = \sum \Dva x_{\nu}^2
+\end{align*}
+ausdrückt. Sind $K_{x_{\nu}}$ und $K'_{x'_{\nu}}$ zwei kartesische 
+Koordinatensysteme, so gilt
+\begin{align*}
+\sum \Dva x_{\nu}^2 = \sum \Dva x^{\prime 2}_{\nu}\,.
+\end{align*}
 
+Die rechte Seite ist der linken identisch gleich vermöge der zwischen $x'$ und 
+$x$ bestehenden linearen orthogonalen Transformationsgleichungen, und die 
+rechte Seite unterscheidet sich von der linken nur dadurch, daß die $x_{\nu}$ 
+durch die $x'_{\nu}$ ersetzt sind. Man drückt diesen Sachverhalt durch die 
+Aussage aus: $\sum \Dva x_{\nu}^2$ ist eine Invariante bezüglich linearer 
+orthogonaler Transformationen. Offenbar haben in der euklidischen Geometrie nur 
+solche (und alle solche) Größen eine objektive (von der besonderen Wahl des 
+kartesischen Systems unabhängige) Bedeutung, welche sich durch eine Invariante
+(bezüglich linearer orthogonaler Koordinaten) ausdrücken lassen. Hierauf beruht 
+es, daß die Invariantentheorie, welche sich mit den Strukturgesetzen der 
+Invariante beschäftigt, für die analytische Geometrie von Bedeutung ist.
+
+Als zweites Beispiel einer geometrischen Invariante nenne ich die Größe eines 
+Volumens. Dasselbe drückt sich in der Form aus:
+\begin{align*}
+	V = \iiint \dd x_1\,\dd x_2\,\dd x_3\,.
+\end{align*}
+In der Tat ist nach dem \textsc{Jacobi}schen Transformationssatze
+\begin{align*}
+\iiint \dd x'_{1}\, \dd x'_{2}\, \dd x'_{3} = \iiint 
+	\frpa{\rbr{x'_{1}, x'_{2}, x'_{3}}}{\rbr{x_{1}, x_{2}, x_{3}}}\,
+	\dd x_1\,\dd x_2\,\dd x_3\,,
+\end{align*}
+wobei der Integrand im letzten Integral die Funktionaldeterminante der 
+$x'_{\nu}$ nach den $x_{\nu}$ bedeutet, welche nach \eqref{eq:3} gleich der 
+Determinante $\vbr{b_{\mu\nu}}$ der Substitutionskoeffizienten $b_{\nu\alpha}$ 
+ist. Bildet man die Determinante der $\delta_{\mu\alpha}$ der \cref{eq:4}, so 
+erhält man unter Anwendung des Multiplikationstheorems der Determinanten
+\begin{align}
+\begin{aligned}
+1 &= \vbr{\delta_{\alpha\beta}} = \vbr{\sum_{\nu} b_{\nu\alpha} b_{\nu\beta}}
+= \vbr{b_{\mu\nu}}^2; \\
+\vbr{b_{\mu\nu}} &= \pm 1\, .
+\end{aligned}
+\label{eq:6}
+\end{align}
 Beschränkt man sich auf diejenigen Transformationen, welche die Determinante 
-$+1$ haben \footnote{Es giht also zweierlei kartesische Koordinatensysteme,
+$+1$ haben\footnote{Es gibt also zweierlei kartesische Koordinatensysteme,
 welche man als \enquote{Rechtssysteme} und \enquote{Linkssysteme} bezeichnet. 
-Der Unterschied zwischen heiden ist jedem Physiker und Ingenieur geläufig. 
+Der Unterschied zwischen beiden ist jedem Physiker und Ingenieur geläufig. 
 Interessant ist, daß man Rechtssysteme bzw.\ Linkssysteme an sich nicht 
-geometrisch definieren kann, wohl aber die Gegensätzlichkeit beider Typen.} (und 
-nur solche gehen aus stetiger Änderung des Koordinatensystems hervor), so ist 
-also V eine Invariante.
+geometrisch definieren kann, wohl aber die Gegensätzlichkeit beider Typen.} 
+(und nur solche gehen aus \emph{stetiger} Änderung des Koordinatensystems 
+hervor), so ist also $V$ eine Invariante.
 
 \begin{align}
 &\left.
@@ -322,7 +372,7 @@ auffassen\footnote{Diese Betrachtungen sollen den Leser mit der Tensor-
 betrachtung bekannt machen ohne die besonderen Schwierig-
 keiten der vierdimensionalen Betrachtungsweise, damit dann
 die entsprechenden Betrachtungen der speziellen Relativitäts-
-theorie (\textsc{Minkowski}s Interpl'etation des Feldes) weniger Schwie-
+theorie (\textsc{Minkowski}s Interpretation des Feldes) weniger Schwie-
 rigkeiten machen.}. Die Gleichungen lassen sich aber leicht
 interpretieren, indem man
 ~
@@ -338,15 +388,15 @@ Form gebracht werden
 	&= +\frac{1}{c}.
 	\tag{20a}
 \end{align}
-
-~
-erscheint demnach im Gegensatz zu e als Größe vom Symmetrie charakter eines 
-Drehmomentes oder einer Rotationsgeschwindigkeit. Die Divergenzgleichungen aber 
-nehmen die Formen an
+$\mfrakh$ erscheint demnach im Gegensatz zu $\mfrake$ als Größe vom 
+Symmetriecharakter eines Drehmomentes oder einer Rotationsgeschwindigkeit. Die 
+Divergenzgleichungen aber nehmen die Formen an
 \begin{align}
-	&= \varrho
+	\frpa{\mfrake_{\nu}}{x_{\nu}}&= \varrho
 	\tag{19b} \\
-	&= 0.
+	\frpa{\mfrakh_{\mu\nu}}{x_{\varrho}} +
+	\frpa{\mfrakh_{\nu\varrho}}{x_{\mu}} +
+	\frpa{\mfrakh_{\varrho\mu}}{x_{\nu}} &= 0\,.
 	\tag{20b}
 \end{align}
 Die letzte Gleichung ist eine antisymmetrische Tensorgleichung vom dritten Range 
