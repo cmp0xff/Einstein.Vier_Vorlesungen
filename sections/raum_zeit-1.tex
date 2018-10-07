@@ -73,7 +73,7 @@ können; \textsc{Poincar\'e}\index{\textsc{Poincar\'e}, H.} nennt sie
 bezieht sich auf die Gesetze, welche jene Lagerungsmöglichkeiten beherrschen. 
 Für den Raumbegriff scheint uns folgendes wesentlich. Man kann durch Anlegen von 
 Körpern $B$, $C \ldots$ an einen Körper $A$ neu Körper bilden, wir wollen sagen, 
-den Körper $\lambda$ fortsetzen. Man kann einen Körper $A$ so fortsetzen, daß er mit 
+den Körper $A$ fortsetzen. Man kann einen Körper $A$ so fortsetzen, daß er mit 
 jedem anderen Körper $X$ zur Berührung kommt. Wir können den Inbegriff aller 
 Fortsetzungen des Körpers $A$ als den \enquote{Raum des Körpers $A$} bezeichnen. 
 Dann gilt, daß alle Körper sich \enquote{im Raum des (beliebig gewählten) 
@@ -343,7 +343,65 @@ Ohne Beschränkung der Allgemeinheit kann hierbei
 \end{align*}
 gesetzt werden.
 
-Multipliziert man die Gleichungen mit $b_{\beta\nu}$ [vgl.\ \cref{eq:3a,eq:5}]
+Multipliziert man die Gleichungen mit $b_{\beta\nu}$ [vgl.\ \cref{eq:3a,eq:5}] 
+und summiert über $\nu$, so erhält man
+\begin{align*}
+x'_{\beta} - A'_{\beta} = \lambda B'_{\beta}\,,
+\end{align*}
+wobei
+\begin{align*}
+B'_{\beta} = \sum_{\nu} b_{\beta\nu} B_{\nu};\qquad
+A'_{\beta} = \sum_{\nu} b_{\beta\nu} A_{\nu}
+\end{align*}
+gesetzt ist. Dies sind die Gleichungen der Geraden bezüglich eines zweiten 
+kartesischen Koordinatensystems $K'$. Sie haben dieselbe Form wie die 
+Gleichungen bezüglich des ursprünglichen Koordinatensystems; es zeigt sich 
+also, daß die Gerade eine vom Koordinatensystem unabhängige Bedeutung hat. 
+Formal betrachtet beruht dies darauf, daß sich die Größen $\rbr{x_{\nu} - 
+A_{\nu}} - \lambda B_{\nu}$ transformieren wie Streckenkomponenten 
+$\Dva x_{\nu}$. Den Inbegriff dreier Größen, die für jedes kartesische 
+Koordinatensystem definiert sind und sich transformieren wie 
+Streckenkomponenten, nennt man einen Vektor. Verschwinden die drei 
+Komponenten eines Vektors in bezug auf ein kartesisclles Koordinatensystem, so 
+verschwinden sie auch für jedes andere, weil die Transformationsgleichungen 
+homogen sind. So kann man die Bedeutung des Vektorbegriffes erfassen, ohne auf 
+die geometrische Veranschaulichung rekurrieren zu müssen. Das geschilderte 
+Verhalten der obigen Gleichung der Geraden drückt man so aus: Die Gleichung 
+der Geraden ist bezüglich linearer orthogonaler Transformationen kovariant.
+
+Nun soll kurz gezeigt werden, daß es geometrische Realitäten gibt, die auf den 
+Begriff des Tensors führen. Es sei $P_0$ Mittelpunkt einer Fläche zweiten 
+Grades, $P$ ein beliebiger Punkt der Oberfläche, $\xi_{\nu}$ seien die 
+Projektionen der Strecke $P_0 - P$ auf die Koordinatenachsen. Dann ist
+\begin{align*}
+\sum_{\mu\nu} a_{\mu\nu} \xi_{\mu} \xi_{\nu}  = 1\, ,
+\end{align*}
+oder -- wie wir \emph{von nun an in allen} analogen Fällen unter Weglassung des 
+Summenzeichens schreiben wollen, indem wir festsetzen, daß die Summation über 
+zweimal auftretende Indizes selbstverständlich sei --
+\begin{align*}
+a_{\mu\nu} \xi_{\mu} \xi_{\nu}  = 1
+\end{align*}
+die Gleichung der Fläche. Die Größen $a_{\mu\nu}$ bestimmen die Fläche bis auf 
+die Lage des Mittelpunktes in bezug auf das gewählte kartesische 
+Koordinatensystem vollständig. Aus dem bekannten Transformationsgesetz der 
+$\xi_{\nu}$ [\cref{eq:3a}] für lineare orthogonale Transformationen findet man 
+leicht für die $a_{\mu\nu}$ das Transformationsgesetz\footnote{Die Gleichung 
+$a'_{\sigma\tau} \xi'_{\sigma} \xi'_{\tau} = 1$ läßt sich vermöge \eqref{eq:5} 
+durch $a'_{\sigma\tau} b_{\mu\sigma} b_{\nu\tau} \xi_{\sigma} \xi_{\tau} = 1$ 
+ersetzen, woraus die Behauptung unmittelbar folgt.}
+\begin{align*}
+a'_{\sigma\tau} = b_{\sigma\mu} b_{\tau\nu} a_{\mu\nu}\,.
+\end{align*}
+Dies Transformationsgesetz ist homogen und vom ersten Grade in den 
+$a_{\mu\nu}$. Die $a_{\mu\nu}$ nennt man vermöge dieses Transformationsgesetzes 
+Komponenten eines Tensors vom zweiten Range\footnote{In der neueren Literatur 
+wird der \enquote{Rang} eines Tensors häufig mit \enquote{Stufe} bezeichnet.} 
+(letzteres wegen der Zwei-Zahl der Indizes). Verschwinden sämtliche Komponenten 
+$a_{\mu\nu}$ eines Tensors in bezug auf ein kartesisches System, so 
+verschwinden sie auch in bezug auf jedes andere kartesische System. Die Fläche 
+zweiten Grades wird ihrer Form und Lage nach durch diesen Tensor $(a)$ 
+dargestellt.
 
 \begin{align}
 &\left.
