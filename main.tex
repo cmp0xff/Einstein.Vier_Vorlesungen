@@ -174,21 +174,20 @@
 % https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
 \setcounter{secnumdepth}{0}
 
-\input{./front_matter}
+\input{./sections/front_matter-1}
 
-\input{./raum_zeit-1}
+\input{./sections.encry/front_matter-2}
 
-\input{./spez_rela-1}
+%TOC
+\tableofcontents
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Allgemeine Relativitätstheorie}
-\label{sec:all-1}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./sections/raum_zeit-1}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Allgemeine Relativitätstheorie (Fortsetzung)}
-\label{sec:all-2}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./sections/spez_rela-1}
+
+\input{./sections/allg_rela-1}
+
+\input{./sections/allg_rela-2}
 
 \appendix
 
@@ -198,9 +197,9 @@
 % https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
 \setcounter{secnumdepth}{1}
 
-\input{./anha-1}
+\input{./sections.encry/anha-1}
 
-\input{./anha-2}
+\input{./sections.encry/anha-2}
 
 % https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
 \setcounter{secnumdepth}{0}
