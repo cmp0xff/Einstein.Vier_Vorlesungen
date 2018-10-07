@@ -1,0 +1,3 @@
+[submodule "sections.encry"]
+	path = sections.encry
+	url = https://github.com/cmp0xff/Einstein.Vier_Vorlesungen.encry
