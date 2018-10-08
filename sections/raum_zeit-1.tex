@@ -128,8 +128,6 @@ sind, entstammen natürlich der Erfahrung; sie beanspruchen in der allgemeinen
 Relativitätstheorie allerdings nur für (gegenüber astronomischen Dimensionen) 
 unendlich kleine Körper und Bezugsräume Gültigkeit.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Die Größe $s$ nennen wir die Länge der Strecke. Damit diese eindeutig bestimmt 
 sei, muß die Länge einer bestimmten Strecke willkürlich festgesetzt, z.\ B.\ 
 gleich $1$ gesetzt werden (Einheitsmaßstab). Dann sind die Längen aller übrigen 
@@ -143,7 +141,7 @@ Geometrie besitzt. Speziell folgert man leicht, daß man durch $n$-maliges
 Abtragen einer Strecke $s$ auf einer Geraden eine Strecke von der Länge $n 
 \cdot s$ erhält. Eine Länge bedeutet also das Ergebnis einer längs einer 
 Geraden ausgeführten Messung mit Hilfe des Einheitsmaßstabes; sie hat ebenso 
-wie die gerade Linie.eine vom Koordinatensystem unabhängige Bedeutung, wie aus 
+wie die gerade Linie eine vom Koordinatensystem unabhängige Bedeutung, wie aus 
 dem Folgenden hervorgeht.
 
 Wir kommen nun zu einem Gedankengang, der in analoger Weise in der speziellen 
@@ -402,6 +400,45 @@ $a_{\mu\nu}$ eines Tensors in bezug auf ein kartesisches System, so
 verschwinden sie auch in bezug auf jedes andere kartesische System. Die Fläche 
 zweiten Grades wird ihrer Form und Lage nach durch diesen Tensor $(a)$ 
 dargestellt.
+
+Es lassen sich Tensoren von beliebig hohem Range (Indexanzahl) analytisch 
+definieren. Es erweist sich als möglich und zweckmäßig, Vektoren als Tensoren 
+vom Range $1$, Invarianten (Skalare) als Tensoren vom Range $0$ anzusehen. Mit 
+Rücksicht darauf läßt sich die Aufgabe der Invariantentheorie dahin 
+formulieren: Nach welchen Gesetzen lassen sich aus gegebenen Tensoren neue 
+bilden? Diese Gesetze wollen wir nun betrachten, um sie in der Folge anwenden zu 
+können. Dabei handelt es sich zunächst nur um die Tensoren bezüglich linearer 
+orthogonaler Transformationen, wie sie den Übergang von einem kartesischen 
+System zu einem anderen desselben Bezugsraumes beherrschen. Da die Gesetze im 
+,ganzen von der Dimensionszahl unabhängig sind, wollen wir letztere vorläufig 
+unbestimmt lassen (Dimensionszahl $n$).
+
+\paragraph{Definition.} Wenn ein Gebilde bezüglich 
+jedes kartesischen Koordinatensystems eines Bezugsraumes von $n$ Dimensionen 
+durch $n^{\alpha}$ Zahlen $A_{\mu\nu\varrho\ldots}$ ($\alpha = \text{Zahl der 
+Indizes}$) definiert ist, so bilden diese die Komponenten eines Tensors vom 
+Range $\alpha$, wenn ihr Transformationsgesetz
+\begin{align}
+A'_{\mu'\nu'\varrho' \ldots} = 
+b_{\mu'\mu} b_{\nu'\nu} b_{\varrho'\varrho} \ldots A_{\mu\nu\varrho \ldots}
+\label{eq:7}
+\end{align}
+ist.
+
+Bemerkung: Aus dieser Definition folgt, daß
+\begin{align}
+A_{\mu\nu\varrho \ldots} B_{\mu} C_{\nu} D_{\varrho}
+\label{eq:8}
+\end{align}
+eine Invariante ist, falls $(B)$, $(C)$, $(D) \ldots$ Vektoren sind. Umgekehrt 
+kann der Tensorcharakter von $(A)$ gefolgert werden, wenn bekannt ist, daß die 
+obige Bildung für beliebige Wahl der Vektoren $(B)$, $(C)$ usw.\ auf eine 
+Invariante führt.
+
+\paragraph{Addition und Subtraktion.} Durch Addition und Subtraktion 
+entsprechender Komponenten von Tensoren gleichen Ranges entsteht wieder ein 
+Tensor von gleichem Range:
+
 
 \begin{align}
 &\left.
