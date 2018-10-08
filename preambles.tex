@@ -7,7 +7,13 @@
 \documentclass[11pt,oneside]{article} %international style
 
 %adjusting for 6''
-\usepackage[paperwidth=9cm, paperheight=11.5cm, top=0.1cm, left=0.1cm, right=0.1cm, bottom=0.2cm]{geometry}
+\usepackage[
+	paperwidth=9cm, 
+	paperheight=11.5cm, 
+	top=.1cm, 
+	left=.1cm, 
+	right=.1cm, 
+	bottom=.2cm]{geometry}
 
 % other packages (put here what you need)
 %\usepackage{polski} % polish package 
@@ -40,6 +46,10 @@
 
 % https://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
 \usepackage[perpage]{footmisc}
+
+% https://tex.stackexchange.com/questions/174722/
+% add-additional-page-number-from-original-work-in-margin
+%\usepackage{marginnote}
 
 % https://tex.stackexchange.com/questions/23601/footnote-number-in-braces-parentheses
 \renewcommand{\thefootnote}{\arabic{footnote})}
