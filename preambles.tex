@@ -26,13 +26,10 @@
 %\usepackage{longtable} % dla dlugich tabel
 %\usepackage{multirow} % pomoc do tabel
 
-\usepackage{xltxtra}
-\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xltxtra,xspace}
+
 \usepackage{polyglossia}
-\setdefaultlanguage[
-	%spelling=new
-	]{german}
-\setotherlanguage{french}
+
 \usepackage{unicode-math}
 
 \usepackage{cleveref}
@@ -47,14 +44,12 @@
 % https://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
 \usepackage[perpage]{footmisc}
 
+% http://ctan.org/pkg/enumerate
+\usepackage{enumerate}
+
 % https://tex.stackexchange.com/questions/174722/
 % add-additional-page-number-from-original-work-in-margin
 %\usepackage{marginnote}
-
-% https://tex.stackexchange.com/questions/23601/footnote-number-in-braces-parentheses
-\renewcommand{\thefootnote}{\arabic{footnote})}
-
-\makeindex
 
 %FONTS my proposal is TeXGyre
 %\usepackage{tgtermes} %times like
@@ -65,6 +60,28 @@
 %\usepackage{tgbonum} %bookman like
 %\usepackage{tgheros} %helvetica like
 %\usepackage{tgadventor} %avant garde gothic like
+
+\setdefaultlanguage[
+	%spelling=new
+	]{german}
+\setotherlanguage{french}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+% https://tex.stackexchange.com/questions/23601/
+% footnote-number-in-braces-parentheses
+\renewcommand{\thefootnote}{\arabic{footnote})}
+
+% https://tex.stackexchange.com/questions/290937/
+% new-version-of-fontspec-gives-wordspace-error
+\newfontfamily{\ssserif}{CMU Serif}[
+	LetterSpace=20.0, WordSpace=1.5, Ligatures={NoCommon}
+]
+% http://unifraktur.sourceforge.net/
+% letterspacing.html#letterspacing_support-note_xelatex
+\newcommand\emss[1]{{\ssserif #1}}
 
 % Differentials
 \newcommand{\DD}{\BbbD}
@@ -111,6 +128,8 @@
 % 							% \mbfitsansz
 % 	}, bold-style=ISO]
 
+% http://unifraktur.sourceforge.net/unifraktur-forum/viewtopic.php?p=718
+
 % Bracket-like
 \newcommand{\rbr}[1]{{\left(#1\right)}}
 \newcommand{\sbr}[1]{{\left[#1\right]}}
@@ -126,7 +145,7 @@
 \newcommand{\frpa}[2]{{\frac{\partial{#1}}{\partial{#2}}}}
 \newcommand{\frdva}[2]{{\frac{\dva{#1}}{\dva{#2}}}}
 
-% http://unifraktur.sourceforge.net/unifraktur-forum/viewtopic.php?p=718
+\makeindex
 
 %IN ADDITION
 % on such a small "page", we have to let LaTeX to be sloppy

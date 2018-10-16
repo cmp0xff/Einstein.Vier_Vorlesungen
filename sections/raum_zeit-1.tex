@@ -197,10 +197,10 @@ Hieraus folgt zunächst, daß $\lambda$ eine Konstante sein muß. Setzt man
 zunächst $\lambda = 1$, so liefern \eqref{eq:2b} und \eqref{eq:3a} die
 Bedingungen
 \begin{align}
-	\sum b_{\nu \alpha} b_{\nu\beta} = \Dva_{\alpha\beta}\,,
+	\sum_{\alpha} b_{\nu \alpha} b_{\nu\beta} = \delta_{\alpha\beta}\,,
 	\label{eq:4}
 \end{align}
-wobei $\Dva_{\alpha\beta} = 1$ oder $\Dva_{\alpha\beta} = 0$ ist, je 
+wobei $\delta_{\alpha\beta} = 1$ oder $\delta_{\alpha\beta} = 0$ ist, je 
 nachdem $\alpha = \beta$ oder $\alpha \neq \beta$. Die Bedingungen 
 \eqref{eq:4} heißen Orthogonalitätsbedingungen, die Transformationen 
 \eqref{eq:3}, $\eqref{eq:4}$ lineare orthogonale Transformationen. Verlangt 
@@ -220,7 +220,7 @@ $b_{\nu\beta}$ multiplizieren und über $\nu$ summieren. Man erhält
 		b_{\nu\alpha} b_{\nu\beta} \,\Dva x_{\alpha}
 		\\ 
 		&= \sum_{\alpha}
-		\Dva_{\alpha\beta}\,\Dva x_{\alpha} = \Dva x_{\beta}\,.
+		\delta_{\alpha\beta}\,\Dva x_{\alpha} = \Dva x_{\beta}\,.
 \end{aligned}
 	\label{eq:5}
 \end{align}
@@ -255,10 +255,10 @@ einfache Überlegung, welche von \textsc{Helmholtz} herrührt:
 
 Zwischen $n$ Punkten des Raumes gibt es $\dfrac{1}{2} n(n-1)$ Abstände 
 $s_{\mu\nu}$; zwischen diesen und den $3n$ Koordinaten bestehen die Relationen
-\begin{align}
+\begin{align*}
 s_{\mu\nu}^2 = \rbr{x_{1(\mu)} - x_{1(\nu)}}^2 +
 	\rbr{x_{2(\mu)} - x_{2(\nu)}}^2 + \cdots
-\end{align}
+\end{align*}
 
 Aus diesen $\dfrac{n(n-1)}{2}$ Gleichungen lassen sich die $3n$ Koordinaten
 eliminieren, aus welcher Elimination mindestens $\dfrac{n(n-1)}{2} - 3n$ 
@@ -413,7 +413,7 @@ System zu einem anderen desselben Bezugsraumes beherrschen. Da die Gesetze im
 ,ganzen von der Dimensionszahl unabhängig sind, wollen wir letztere vorläufig 
 unbestimmt lassen (Dimensionszahl $n$).
 
-\paragraph{Definition.} Wenn ein Gebilde bezüglich 
+\emss{Definition.} Wenn ein Gebilde bezüglich 
 jedes kartesischen Koordinatensystems eines Bezugsraumes von $n$ Dimensionen 
 durch $n^{\alpha}$ Zahlen $A_{\mu\nu\varrho\ldots}$ ($\alpha = \text{Zahl der 
 Indizes}$) definiert ist, so bilden diese die Komponenten eines Tensors vom 
@@ -435,9 +435,94 @@ kann der Tensorcharakter von $(A)$ gefolgert werden, wenn bekannt ist, daß die
 obige Bildung für beliebige Wahl der Vektoren $(B)$, $(C)$ usw.\ auf eine 
 Invariante führt.
 
-\paragraph{Addition und Subtraktion.} Durch Addition und Subtraktion 
+\emss{Addition und Subtraktion.} Durch Addition und Subtraktion 
 entsprechender Komponenten von Tensoren gleichen Ranges entsteht wieder ein 
 Tensor von gleichem Range:
+\begin{align}
+A_{\mu\nu\varrho\ldots} \pm B_{\mu\nu\varrho\ldots} = C_{\mu\nu\varrho\ldots}
+\label{eq:9}
+\end{align}
+
+Beweis aus der obigen Definition des Tensors.
+
+\emss{Multiplikation.} Aus einem Tensor vom Range $\alpha$ und einem Tensor vom 
+Range \beta erhält man einen Tensor vom Range $\alpha + \beta$, indem man alle 
+Komponenten des ersten mit allen Komponenten des zweiten multipliziert:
+\begin{align}
+T_{\mu\nu\varrho\ldots \alpha\beta\gamma\ldots} = A_{\mu\nu\varrho\ldots} 
+B_{\alpha\beta\gamma\ldots}
+\label{eq:10}
+\end{align}
+
+\emss{Verjüngung.} Aus einem Tensor vom Range $\alpha$ erhält man einen Tensor 
+vom Range $\alpha - 2$, indem man zwei bestimmte Indizes einander gleich setzt 
+und über diesen nunmehr einheitlichen Index summiert:
+\begin{align}
+T_{\varrho\ldots} = A_{\mu\mu\rho\ldots} 
+	\rbr{= \sum_{\mu} A_{\mu\mu\rho\ldots}}.
+\label{eq:11}
+\end{align}
+
+Beweis:
+\begin{align*}
+A'_{\mu\mu\rho\ldots} &=
+	b_{\mu\alpha} b_{\mu\beta} b_{\varrho\gamma} \ldots
+	A_{\alpha\beta\gamma\ldots}
+=
+	\delta_{\alpha\beta} b_{\rho\gamma} \ldots
+	A_{\alpha\beta\gamma\ldots}
+\\
+&=
+b_{\rho\gamma} \ldots A_{\alpha\alpha\gamma\ldots}
+\end{align*}
+
+Zu diesen elementaren Rechnungsregeln tritt noch die der Tensorbildung 
+(Erweiterung) durch Differentiation
+\begin{align}
+T_{\mu\nu\varrho\ldots\alpha} = \frpa{A_{\mu\nu\varrho}}{x_{\alpha}}.
+\label{eq:12}
+\end{align}
+
+Wenn $(A)$ ein Tensor vom Range $\alpha$ ist, so ist $(T)$ ein Tensor vom Range 
+$\alpha + 1$. Der Beweis folgt aus den Transformationsgleichungen \eqref{eq:3a} 
+und \eqref{eq:5}, aus welch letzteren man schließt:
+\begin{align}
+\frpa{}{x'_{\nu}} = 
+\frpa{}{x_{\alpha}} \cdot \frpa{x_{\alpha}}{x'_{\nu}} = 
+b_{\nu\alpha} \frpa{}{x_{\alpha}}
+\end{align}
+
+Gemäß diesen Rechnungsregeln lassen sich aus Tensoren (bezüglich linearer 
+orthogonaler Transformationen) neue ableiten.
+
+Symmetrieeigenschaften der Tensoren. Tensoren heißen symmetrisch bzw.\ 
+antisymmetrisch bezüglich zweier ihrer Indizes $\mu$ und $\nu$, wenn die beiden 
+Komponenten, die aus der Vertauschung der Indizes $\mu$ und $\nu$ auseinander 
+hervorgehen, einander gleich bzw.\ entgegengesetzt gleich sind.
+\begin{align*}
+&\text{Bedingung der Symmetrie:} && A_{\mu\nu\varrho} = A_{\nu\mu\varrho}
+\\
+&\text{Bedingung der Antisymmetrie:} && A_{\mu\nu\varrho} = -A_{\nu\mu\varrho}
+\\
+\end{align*}
+
+Satz: Der Charakter der Symmetrie bzw.\ Antisymmetrie besteht unabhängig von 
+der Koordinatenwahl, durch welchen Satz er erst wirklich Bedeutung erhält. 
+Beweis aus der Definitionsgleichung der Tensoren.
+
+\emss{Spezielle Tensoren.}
+\begin{enumerate}[I.]
+\item
+Die Größen $\delta_{\varrho\sigma}$ [\cref{eq:4}] sind Tensorkomponenten 
+(Fundamentaltensor).
+
+\item
+Es gibt einen bezüglich aller Indexpaare antisymmetrischen Tensor
+\end{enumerate}
+
+Diese wenigen einfachen Sätze bilden -- wie sich im folgenden zeigen wird -- 
+den invariantentheoretischen Apparat für den Aufbau der Gleichungen der 
+vorrelativistischen Physik und der speziellen Relativitätstheorie.
 
 
 \begin{align}
