@@ -335,7 +335,7 @@ x_{\nu} - A_{\nu} = \lambda B_{\nu}\quad \text{($\nu$ von $1$ bis $3$)}\, .
 \end{align*}
 Ohne Beschränkung der Allgemeinheit kann hierbei
 \begin{align*}
-\Sigma B_{\nu}^2 = 1
+\sum B_{\nu}^2 = 1
 \end{align*}
 gesetzt werden.
 
@@ -514,7 +514,9 @@ Beweis aus der Definitionsgleichung der Tensoren.
 Die Größen $\delta_{\varrho\sigma}$ [\cref{eq:4}] sind Tensorkomponenten 
 (Fundamentaltensor).
 
-Beweis: Setzt man in die rechte Seite der Transformationsgleichungen 
+%\hspace{\parindent}
+Beweis: Setzt man in die rechte Seite der 
+Transformationsgleichungen 
 $A'_{\mu\nu} = b_{\mu\alpha} b_{\nu\beta} A_{\alpha\beta}$ für 
 $A_{\alpha\beta}$ die Größen $\delta_{\alpha\beta}$ ($=1$ bzw. $0$, je nachdem 
 $\alpha$ oder $\alpha \neq \beta$), so erhält man
@@ -522,6 +524,7 @@ $\alpha$ oder $\alpha \neq \beta$), so erhält man
 A'_{\mu\nu} = b_{\mu\alpha} b_{\nu\alpha} = \delta_{\mu\nu}.
 \end{align*}
 
+%\hspace{\parindent}
 Die Berechtigung des letzten Gleichheitszeichens erhellt, wenn man \eqref{eq:4} 
 auf die inverse Substitution \eqref{eq:5} anwendet.
 
@@ -532,6 +535,7 @@ ist, und dessen Komponenten gleich $+1$ oder $-1$ sind, je nachdem
 $\mu\,\nu\,\varrho\ldots$ eine gerade oder ungerade permutation von 
 $1\,2\,3\ldots$ ist.
 
+%\hspace{\parindent}
 Beweis mit Hilfe des oben bewiesenen Satzes $\vbr{b_{\varrho\sigma}} = 1$.
 \end{enumerate}
 
@@ -560,6 +564,92 @@ Ereignisse (hypothetisch) eine objektive Bedeutung, während oben nur von der
 Gleichzeitigkeit zweier Erlebnisse eines Subjekts die Rede war. Die so 
 festgelegte Zeit ist jedenfalls unabhängig von der Lage des Koordinatensystems 
 im Bezugsraume, also eine Invariante bezüglich der Transformation \eqref{eq:3}.
+
+Die vorrelativistische Physik postuliert, daß die ihre Gesetze ausdrückenden 
+Gleichungssysteme mit Bezug auf die Transformation \eqref{eq:3} kovariant 
+seiell, ebenso wie die Relation der \textsc{Euklid}ischen Geometrie. Es wird 
+dadurch die Isotropie und Homogenität des Raumes zum Ausdruck 
+gebracht\footnote{Allerdings könnte man z.\ B.\ auch in dem Falle, daß es im
+Raume eine physikalisch bevorzugte Richtung gäbe, die physikalischen Gesetze 
+durch Gleichungen zum Ausdruck bringen, welche bezüglich der Transformationen 
+\eqref{eq:3} kovariant sind; eine solche Darstellung wäre aber in diesem Falle 
+eine unzweckmäßige. Gäbe es nämlich eine bevorzugte Richtung, so wäre es im 
+Interesse der Einfachheit der Naturbeschreibung zweckmäßig, das 
+Koordinatensystem zu dieser Richtung in bestimmter Weise zu orientieren. Ist 
+aber umgekehrt keine Richtung des Raumes vor anderen physikalisch bevorzugt, so 
+ist es unlogisch, die Naturgesetze so zu formulieren, daß die Gleichwertigkeit 
+verschieden orientierter Koordinatensysteme verborgen bleibt. Wir werden diesen 
+Gesichtspunkt bei der speziellen und allgemeinen Relativitätstheorie wieder 
+antreffen.}. Wir wollen nun die wichtigsten physikalischen Gleichungen von 
+diesem Gesichtspunkte aus betrachten.
+
+Bewegungsgleichungen des Massenpunktes
+\begin{align}
+m \frde{^2 x_{\nu}}{t^2} = X_{\nu}
+\label{eq:14}
+\end{align}
+$\rbr{\dd x_{\nu}}$ ist ein Vektor, $\dd t$, also auch $\dfrac{1}{\dd t}$ eine 
+Invariante, also $\rbr{\dfrac{\dd x_{\nu}}{\dd t}}$ ein Vektor; ebenso zeigt 
+man, daß $\rbr{\dfrac{\dd^2 x_{\nu}}{\dd t^2}}$ ein Vektor ist. Allgemein 
+ändert der Differentiationsprozeß nach der Zeit den Tensorcharakter nicht. 
+Da $m$ eine Invariante ist (Tensor nullten Ranges), so ist auch $\rbr{m 
+\dfrac{\dd^2 x_{\nu}}{\dd t^2}}$ ein Vektor oder Tensor ersten Ranges (nach
+dem Satz von der äußeren Multiplikation der Tensoren). Hat also die Kraft 
+$\rbr{X_{\nu}}$ Vektorcharakter, so gilt dies auch für die Differenz
+$\rbr{m \dfrac{\dd^2 x_{\nu}}{\dd t^2} - X_{\nu}}$. Die Bewegungsgleichung gilt 
+also auch für jedes andere kartesische Koordinatensystem des Bezugsraumes. Für 
+den Fall, daß die Kräfte konservativ sind, ist der Vektorcharakter von 
+$X_{\nu}$ leicht erkennbar. Denn dann existiert eine potentielle Energie 
+$\Phi$, welche nur von den Punktabständen abhängt, also eine Invariante ist; 
+dann ist der Vektorcharakter der Kraft $X_{\nu} = - \dfrac{\partial 
+\Phi}{\partial x_{\nu}}$ eine Folge unserer allgemeinen Sätze (Erweiterung 
+eines Tensors vom Range 0).
+
+Durch Multiplikation mit dem Tensor ersten Ranges der Geschwindigkeit erhält man 
+ferner die Tensorgleichung
+\begin{align*}
+\rbr{m \frde{^2 x_{\nu}}{t^2} - X_{\nu}} \frde{x_{\mu}}{t} = 0\,.
+\end{align*}
+Durch Verjüngen und Multiplikation mit dem Skalar $\dd t$ erhält man die 
+Gleichung der kinetischen Energie
+\begin{align*}
+\dd\rbr{\frac{m q^2}{2}} = X_{\nu}\,\dd x_{\nu}\,.
+\end{align*}
+
+Bezeichnet man mit $\xi_{\nu}$ die Differenz der Koordinaten des materiellen 
+Punktes und derjenigen eines raumfesten Punktes, so haben die $\xi_{\nu}$ 
+Vektorcharakter. Offenbar ist $\frde{^2 x_{\nu}}{t^2} = \frde{^2 
+\xi_{\nu}}{t^2}$, so daß man die Bewegungsgleichungen des Punktes auch 
+schreiben kann
+\begin{align*}
+m \frde{^2 \xi_{\nu}}{t^2} - X_{\nu} = 0\,.
+\end{align*}
+Multipliziert man diese Gleichung mit $\xi_{\mu}$, so erhält man eine 
+Tensorgleichung
+\begin{align*}
+\rbr{m \frde{^2 \xi_{\nu}}{t^2} - X_{\nu}} \frde{\xi_{\mu}}{t} = 0\,.
+\end{align*}
+Durch Verjüngen des linksstehenden Tensors und Bilden des zeitlichen Mittels 
+gelangt man zum Virialsatz, worauf wir nicht näher eingehen. Durch Vertauschung 
+der Indizes und nachfolgende Subtraktion erhält man nach einfacher Umformung den 
+Momentensatz
+\begin{align}
+\frde{}{t}\sbr{m\rbr{\xi_{\mu}\frde{\xi_{nu}}{t}-
+\xi_{\nu}\frde{\xi_{\mu}}{t}}}
+= \xi_{\mu} X_{\nu} - \xi_{\nu} X_{\mu}\,.
+\label{eq:15}
+\end{align}
+
+Bei dieser Darstellung wird es offenbar, daß die Momente von Vektoren nicht 
+wieder Vektoren, sondern Tensoren sind. Wegen des antisymmetrischen Charakters 
+gibt es aber nun nicht neun, sondern nur drei selbständige Gleichungen dieses 
+Systems. Die Möglichkeit, antisymmetrische Tensoren zweiten Ranges im Raume
+von drei Dimensionen durch Vektoren zu ersetzen, beruht auf der Bildung des 
+Vektors
+\begin{align*}
+A_{\mu} = \frac{1}{2} A_{\sigma\tau} \delta_{\sigma\tau\mu}\,.
+\end{align*}
+
 
 
 \begin{align}

@@ -32,7 +32,7 @@
 
 \usepackage{unicode-math}
 
-\usepackage{cleveref}
+\usepackage[nosort]{cleveref}
 
 \usepackage[autostyle=true,german=quotes]{csquotes}
 
@@ -44,6 +44,9 @@
 % https://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
 \usepackage[perpage]{footmisc}
 
+% https://tex.stackexchange.com/questions/214030/
+% how-can-i-indent-paragraphs-within-an-itemize-environment
+% \usepackage{enumitem}
 % http://ctan.org/pkg/enumerate
 \usepackage{enumerate}
 
@@ -82,6 +85,13 @@
 %h ttp://unifraktur.sourceforge.net/
 % letterspacing.html#letterspacing_support-note_xelatex
 \newcommand\emss[1]{{\ssserif #1}}
+
+% https://tex.stackexchange.com/questions/214030/
+% how-can-i-indent-paragraphs-within-an-itemize-environment
+% \setlist{  
+%   listparindent=\parindent,
+%   parsep=0pt,
+% }
 
 % Differentials
 \newcommand{\DD}{\BbbD}
@@ -140,7 +150,7 @@
 \newcommand{\fat}[2]{{\left.#1\right|_{#2}}}
 
 % Fraction-like
-\newcommand{\frde}[2]{{\frac{\dd{#1}}{\dd{#2}}}}
+\newcommand{\frde}[2]{{\dfrac{\dd{#1}}{\dd{#2}}}}
 \newcommand{\frDe}[2]{{\frac{\DD{#1}}{\DD{#2}}}}
 \newcommand{\frpa}[2]{{\frac{\partial{#1}}{\partial{#2}}}}
 \newcommand{\frdva}[2]{{\frac{\dva{#1}}{\dva{#2}}}}
